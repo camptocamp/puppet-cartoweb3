@@ -36,7 +36,7 @@ class cartoweb3::base {
   cron { "cw3 clean images cache":
     command => "/usr/local/bin/cartoweb3-clean.sh",
     user    => "www-data",
-    hour    => "*/8",
+    hour    => "*/3",
     minute  => "0",
     require => [ File["/usr/local/bin/cartoweb3-clean.sh"], User["www-data"] ],
   }
