@@ -20,7 +20,7 @@ class cartoweb3::base {
   file {"/usr/local/bin/cartoweb3-clean.sh":
     ensure => present,
     mode   => 755,
-    source => "puppet:///cartoweb3/usr/local/bin/cartoweb3-clean.sh"
+    source => "puppet:///modules/cartoweb3/usr/local/bin/cartoweb3-clean.sh"
   }
 
   cron { "cartoweb3 clean images cache":
