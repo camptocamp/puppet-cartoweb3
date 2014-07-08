@@ -46,8 +46,8 @@ class cartoweb3::base {
     group   => root,
     mode    => '0644',
     content => "enable_dl = On\n",
-    require => [Package['php5-common'], Package['apache']],
-    notify  => Service['apache'],
+    require => [Package['php5-common'], Package['httpd']],
+    notify  => Service['httpd'],
   }
 
 }
