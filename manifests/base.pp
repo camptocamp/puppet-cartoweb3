@@ -18,9 +18,9 @@ class cartoweb3::base {
   }
 
   file {'/usr/local/bin/cartoweb3-clean.sh':
-    ensure => present,
-    mode   => '0755',
-    source => 'puppet:///modules/cartoweb3/usr/local/bin/cartoweb3-clean.sh'
+    ensure  => file,
+    mode    => '0755',
+    content => file('cartoweb3/usr/local/bin/cartoweb3-clean.sh'),
   }
 
   cron { 'cartoweb3 clean images cache':
@@ -41,7 +41,7 @@ class cartoweb3::base {
   }
 
   file {'/etc/php5/conf.d/cartoweb3.ini':
-    ensure  => present,
+    ensure  => file,
     owner   => root,
     group   => root,
     mode    => '0644',
