@@ -1,0 +1,22 @@
+{
+  "name": "camptocamp-cartoweb3",
+  "version": "0.1.0",
+  "author": "Camptocamp",
+  "summary": "Puppet Cartoweb3 module",
+  "license": "Apache-2.0",
+  "source": "https://github.com/camptocamp/puppet-cartoweb3",
+  "project_page": "https://github.com/camptocamp/puppet-cartoweb3",
+  "issues_url": "https://github.com/camptocamp/puppet-cartoweb3/issues",
+  "dependencies": [
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    }
+  ]
+}
